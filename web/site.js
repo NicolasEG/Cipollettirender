@@ -1,0 +1,1 @@
+const band=document.querySelector('.band');if(band&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const update=()=>{const box=band.getBoundingClientRect();band.style.setProperty('--shift',Math.max(-38,Math.min(38,(innerHeight/2-box.top-box.height/2)*.14))+'px')};addEventListener('scroll',update,{passive:true});update()}
